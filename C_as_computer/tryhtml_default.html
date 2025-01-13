@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="images/clogo.png">
+    <title>C as computer tryit Editor</title>
+    <link rel="stylesheet" href="html_default.css" />
+</head>
+<body>
+    <div class="main-editor">
+        <button class="btn" onclick="runCode()">Run ></button>
+        <button class="dbtn" style="left: 7rem;" onclick="deleteContent()">Delete</button>
+        <div class="first" contenteditable="true">
+            <p><code><span style="color: blue;">&lt;</span><span style="color:brown;">!DOCTYPE</span> <span style="color:red;">html</span><span style="color:blue;">&gt;</span>
+<span style="color: blue;">&lt;</span><span style="color: brown;">html</span><span style="color:blue">&gt;</span>
+<span style="color: blue;">&lt;</span><span style="color: brown;">head</span><span style="color:blue">&gt;</span>  
+<span style="color:blue">&lt;</span><span style="color:brown">title</span><span style="color:blue">&gt;</span>Page Title<span style="color:blue">&lt;</span><span style="color:brown">/title</span><span style="color:blue">&gt;</span>   
+<span style="color: blue;">&lt;</span><span style="color: brown;">/head</span><span style="color:blue">&gt;</span> 
+<span style="color: blue;">&lt;</span><span style="color: brown;">body</span><span style="color:blue">&gt;</span> 
+
+<span style="color: blue;">&lt;</span><span style="color: brown;">h1</span><span style="color:blue">&gt;</span>My First Heading<span style="color: blue;">&lt;</span><span style="color: brown;">/h1</span><span style="color:blue">&gt;</span> 
+<span style="color: blue;">&lt;</span><span style="color: brown;">p</span><span style="color:blue">&gt;</span> My first name.<span style="color: blue;">&lt;</span><span style="color: brown;">/p</span><span style="color:blue">&gt;</span> 
+
+<span style="color: blue;">&lt;</span><span style="color: brown;">/body</span><span style="color:blue">&gt;</span> 
+<span style="color: blue;">&lt;</span><span style="color: brown;">/html</span><span style="color:blue">&gt;</span> 
+
+
+            </code></p>
+        </div>
+        <iframe class="second"></iframe>
+    </div>
+    <script src="js_files/html_default.js"></script>
+    <script>
+        function runCode() {
+            // Add your run code functionality here
+        }
+
+        function deleteContent() {
+            document.querySelector('.first').innerHTML = '';
+            document.querySelector('.second').innerHTML = '';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.btn {
+    position: absolute;
+    top: 0;
+    left: 10px; /* Adjusted for correct positioning */
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    background: #2a2185;
+    text-decoration: none;
+    color: #edf2fc;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: goldenrod;
+}
+
+.dbtn {
+    position: absolute;
+    top: 0;
+    left: 120px; /* Adjusted for correct positioning, spacing from .btn */
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    background: #2a2185;
+    text-decoration: none;
+    color: #edf2fc;
+    border-radius: 10px;
+}
+
+.dbtn:hover {
+    color: white;
+    background-color: goldenrod;
+}
+
+/* to change the background colr and make the code div in center */
+.main-editor{
+    background: #edf2fc;
+    display: flex;
+    width: 100%;
+    padding: 60px 40px 60px 40px;
+    padding-top: 150px;
+    padding-right: 30px;
+    margin: 0;
+    box-shadow: 0 2px 3px black;
+    position: fixed;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border: 7px solid #2a2185;
+    
+}
+.first{
+    background-color: white;
+    width: 50%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space:pre;
+    box-shadow: 0 1px 1px black;
+    outline: none;
+    padding: 0.6rem;
+    height: 90vh;
+    margin-right: 20px;
+}
+.main-editor .first p{
+    font-size: 20px;
+}
+.second{
+    background-color: rgb(189, 182, 182);
+    width: 50%;
+    overflow-y: auto;
+    white-space: pre;
+    right: 0;
+    box-shadow: 0 1px 1px black;
+    padding: 0.4rem;
+    height: 90vh;
+    font-size: xx-large;
+}

@@ -1,0 +1,684 @@
+/* =========== Google Fonts ============ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+  --blue: #2a2185;
+  --white: #edf2fc;
+  --gray: #f5f5f5;
+  --black1: #222;
+  --black2: #999;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+}
+.container hr{
+  border: 1px solid rgb(237, 235, 235); 
+  width: 90%;
+}
+/* =============== Navigation ================ */
+.navigation {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background: var(--blue);
+  border-left: 10px solid var(--blue);
+  transition: 0.5s;
+  overflow-y: auto; /* Added to enable vertical scrolling */
+}
+
+.navigation.active {
+  width: 80px;
+}
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigation ul li {
+  position: center;
+  width: 100%;
+  list-style: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.navigation h2{
+  margin-top: 90px;
+  position: relative;
+  padding: 0 10px;
+  height: 60px;
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--white);
+  display: flex;
+  text-decoration: none;
+}
+.main_heading h2{
+  margin-top: 110px;
+  position: relative;
+  padding: 0 10px;
+  padding-top: 30px;
+  height: 60px;
+  font-size: 600px;
+  line-height: 60px;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--white);
+  display: flex;
+  text-decoration: none;
+}
+.headingg h2{
+  margin-top: 20px;
+  position: relative;
+  margin-left: 20px;
+  height: 80px;
+  font-size: 38px;
+  text-align: left;
+}
+.headingg h3{
+  margin-top: 20px;
+  position: relative;
+  margin-left: 20px;
+  height: 80px;
+  font-size: 30px;
+  text-align: left;
+  font-weight: 600;
+}
+.headingg p {
+  position: relative;
+  margin-left: 20px;
+  height: 50px;
+  font-size: 23px;
+  text-align: left;
+  font-weight: 500;
+}
+.headingg ul{
+  position: relative;
+  margin-left: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+.first{
+  background-color: white;
+  list-style:circle;
+  width: 50%;
+  font-size: 20px;
+  white-space:pre;
+  box-shadow: 0 1px 1px black;
+  outline: none;
+  padding: 0.6rem;
+  height: 50vh;
+  margin-right: 20px;
+}
+
+.table-container table {
+  border-collapse: collapse;
+  width: 80%;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.table-container th, .table-container td {
+  border: 2px solid black;
+  padding: 8px;
+  text-align: left;
+  font-size: x-large;
+}
+
+.table-container th {
+  background-color: #f2f2f2;
+}
+
+
+
+.navigation ul li:hover,
+.navigation ul li.hovered {
+  background-color: var(--white);
+}
+
+.navigation ul li:nth-child(1) {
+  margin-bottom: 40px;
+  pointer-events: none;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.navigation ul li:hover a,
+.navigation ul li.hovered a {
+  color: var(--blue);
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 75px;
+  text-align: center;
+}
+
+.navigation ul li a .icon ion-icon {
+  font-size: 1.75rem;
+}
+
+.search {
+  position: relative;
+  width: 400px;
+  font-size: 20px;
+  
+}
+
+.search label {
+  position: relative;
+  width: 100%;
+}
+.search h1{
+  font-size: 43px;
+}
+
+.search label input {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px 20px;
+  padding-left: 35px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid var(--black2);
+}
+
+.search label ion-icon {
+  position:fixed;
+  top: 0;
+  left: 10px;
+  font-size: 1.2rem;
+}
+.main .topbar .btn_next {
+  height: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  margin-right: 200px;
+  
+}
+.main .topbar .btn_next button {
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: #2a2185;
+  color: var(--white);
+  border-radius: .9rem;
+  padding: 1.7rem 5rem;
+  cursor: pointer;
+}
+
+.main .topbar .btn_next button:hover {
+  font-size: 2rem;
+}
+.main .topbar .btn_home {
+  height: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  margin-right: 20px;
+}
+
+.main .topbar .btn_home button {
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: #2a2185;
+  color: var(--white);
+  border-radius: .9rem;
+  padding: 1.7rem 5rem; /* Increased padding for height and width */
+  cursor: pointer;
+}
+
+
+.main .topbar .btn_home button:hover {
+  font-size: 2rem;
+}
+
+
+.navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 60px;
+  text-align: center;
+  white-space:inherit;
+}
+
+/* --------- curve outside ---------- */
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px var(--white);
+  pointer-events: none;
+}
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px -35px 0 10px var(--white);
+  pointer-events: none;
+}
+
+/* ===================== Main ===================== */
+.main {
+  margin-top: 110px;
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 300px;
+  min-height: 100vh;
+  background: white;
+  transition: 0.5s;
+}
+.main.active {
+  width: calc(100% - 80px);
+  left: 80px;
+}
+
+.topbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+/* ======================= Cards ====================== */
+.cardBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.cardBox .card {
+  position: relative;
+  background: var(--white);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cardBox .card .numbers {
+  position: relative;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: var(--blue);
+}
+
+.cardBox .card .cardName {
+  color: var(--black2);
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.cardBox .card .iconBx {
+  font-size: 3.5rem;
+  color: var(--black2);
+}
+
+.cardBox .card:hover {
+  background: var(--blue);
+}
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBx {
+  color: var(--white);
+}
+
+/* ================== Order Details List ============== */
+.details {
+  position: relative;
+  padding: 10px;
+  display: grid;
+  /* grid-template-columns: 2fr 1fr; */
+  grid-gap: 15px;
+  background-color:rgb(231, 226, 226);
+}
+.details .recentOrders {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  /* background: var(--black2); */
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(8, 8, 8, 0.08);
+  border-radius: 10px;
+  
+}
+.details .cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 5px; /* Reduced padding */
+  margin: 0;   /* Ensure no additional margin */
+}
+.recentCustomersi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardHeader img {
+  max-width: 100%;
+}
+.details .cardHeader h2 {
+  font-weight: 600;
+  font-size: 22px;
+  color: black;
+  background-color: #edf2fc;
+}
+.details .cardHeader .btn {
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 15px 20px;
+  background: var(--blue);
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.details_1 {
+  position: relative;
+  padding: 10px;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-gap: 15px;
+  background-color:rgb(231, 226, 226);
+}
+.details_1 .recentOrders {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  /* background: var(--black2); */
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(8, 8, 8, 0.08);
+  border-radius: 10px;
+  
+}
+.details_1 .cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 5px; /* Reduced padding */
+  margin: 0;   /* Ensure no additional margin */
+}
+
+.details_1 .cardHeader h2 {
+  font-weight: 600;
+  font-size: 22px;
+  color: black;
+  background-color: #edf2fc;
+}
+.details_1 .cardHeader .btn {
+  font-size: 20px;
+  /* margin-top: 20px; */
+  padding: 15px 20px;
+  background: var(--blue);
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 10px;
+}
+/* for the option button in html_css */
+.main .option {
+  display: flex; /* Use flexbox to lay out buttons in a single row */
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically */
+  height: 100%; /* Ensure the container takes full height */
+  width: 100%;
+  gap: 15px; /* Add some space between the buttons */
+}
+
+.main .option .btn1,
+.main .option .btn2,
+.main .option .btn3 {
+  font-size: 23px;
+  /* padding: 15px 20px; */
+  background: rgb(231, 226, 226);
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  border-radius: 10px;
+  padding-top: 10px;
+  display: inline-block;
+  width: 400px; /* Set a fixed width for all buttons */
+  height: 90px; /* Set a fixed height for all buttons */
+  text-align: center; /* Center text inside the buttons */
+  line-height: 50px; /* Vertically center the text */
+}
+
+.option .btn1:hover,
+.option .btn2:hover,
+.option .btn3:hover {
+  background: var(--white);
+  color: var(--blue);
+}
+
+.status.delivered {
+  padding: 2px 4px;
+  background: #8de02c;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.status.pending {
+  padding: 2px 4px;
+  background: #e9b10a;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.status.return {
+  padding: 2px 4px;
+  background: #f00;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.status.inProgress {
+  padding: 2px 4px;
+  background: #1795ce;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.recentCustomers {
+  position: relative;
+  display: grid;
+  min-height: 100px;
+  padding: 10px;
+  background: var(--white);
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+.recentCustomers .imgBx {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.recentCustomers .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.recentCustomers table tr td {
+  padding: 12px 10px;
+}
+.recentCustomers table tr td h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+.recentCustomers table tr td h4 span {
+  font-size: 14px;
+  color: var(--black2);
+}
+.recentCustomers table tr:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+.recentCustomers table tr:hover td h4 span {
+  color: var(--white);
+}
+/* for the visualization of HTML basic sturecture */
+.basic_container {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: 70%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #f3f3f3;
+  margin: 20px;
+}
+
+.indent {
+  padding-left: 20px;
+}
+
+.box {
+  background-color: #f9f9f9;
+  border: 1px solid #190d0d;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.tag {
+  color: #222;
+  margin: 5px 0;
+}
+
+.tag:first-child {
+  margin-top: 0;
+}
+
+.tag:last-child {
+  margin-bottom: 0;
+}
+
+/* ====================== Responsive Design ========================== */
+@media (max-width: 991px) {
+  .navigation {
+    left: -300px;
+  }
+  .navigation.active {
+    width: 300px;
+    left: 0;
+  }
+  .main {
+    width: 100%;
+    left: 0;
+  }
+  .main.active {
+    left: 300px;
+  }
+  .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .details {
+    grid-template-columns: 1fr;
+  }
+  .recentOrders {
+    overflow-x: auto;
+  }
+  .status.inProgress {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cardHeader h2 {
+    font-size: 20px;
+  }
+  .user {
+    min-width: 40px;
+  }
+  .navigation {
+    width: 100%;
+    left: -100%;
+    z-index: 1000;
+  }
+  .navigation.active {
+    width: 100%;
+    left: 0;
+  }
+  .toggle {
+    z-index: 10001;
+  }
+  .main.active .toggle {
+    color: #fff;
+    position: fixed;
+    right: 0;
+    left: initial;
+  }
+}

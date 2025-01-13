@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background: url('images/chatbot.png') no-repeat center center fixed; /* Add your image path */
+    background-size: cover;
+}
+button {
+    margin-top: 440px;
+    margin-left: 76px;
+    --padding: 14px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    background: linear-gradient(135deg, #4267b2, #5a8efb);
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #2a2185, #3949ab);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+

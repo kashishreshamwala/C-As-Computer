@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="x-icon" href="images/clogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Page</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous">
+    
+    <!-- Swiper Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginstyle.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container forms">
+        <div class="col-2">
+            <img src="images/backgroundonline-teacher.png" alt="Online Teacher Background" width="900" height="500">
+        </div>
+
+        <!-- Login Form -->
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" aria-label="Email" class="input" oninput="this.value = this.value.toLowerCase()">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" aria-label="Password" class="password">
+                        <i class="bx bx-hide eye-icon"></i>
+                    </div>
+                    <div class="form-link">
+                        <a href="reset-password.html" class="forgot-pass">Forgot password?</a>
+                    </div>
+                    <div class="field button-field">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Don't have an account? </span>
+                    <a href="#" class="link signup-link">Signup</a>
+                </div>
+            </div>
+
+            <div class="line"></div>
+            <div class="media-option">
+                <a href="#" class="field facebook">
+                    <i class="bx bxl-facebook facebook-icon"></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+            <div class="media-option">
+                <a href="#" class="field google">
+                    <img src="images/google.jpeg" alt="Google Logo" class="google-img" width="20" height="20">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="form signup">
+            <div class="form-content">
+                <header>Signup</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" aria-label="Email" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" aria-label="Password" class="password">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Confirm Password" aria-label="Confirm Password" class="password">
+                        <i class="bx bx-hide eye-icon"></i>
+                    </div>
+                    <div class="field button-field">
+                        <button type="submit">Signup</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Already have an account? </span>
+                    <a href="#" class="link login-link">Login</a>
+                </div>
+            </div>
+
+            <div class="line"></div>
+            <div class="media-option">
+                <a href="#" class="field facebook">
+                    <i class="bx bxl-facebook facebook-icon"></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+            <div class="media-option">
+                <a href="#" class="field google">
+                    <img src="images/google.jpeg" alt="Google Logo" class="google-img" width="20" height="20">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Header and Footer -->
+    <special-header></special-header>
+    <special-footer></special-footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js_files/index.js"></script>
+    <script src="js_files/headerfooter.js"></script>
+    <script src="js_files/theme.js"></script>
+    <script src="js_files/login.js"></script>
+</body>
+
+</html>
