@@ -232,7 +232,9 @@ body {
 }
 
 .main .topbar .btn_next button:hover {
-  font-size: 2rem;
+  font-size: 2.1rem;
+  color: #190d0d;
+  background: #bbcced;
 }
 .main .topbar .btn_home {
   height: 4rem;
@@ -253,7 +255,9 @@ body {
 
 
 .main .topbar .btn_home button:hover {
-  font-size: 2rem;
+  font-size: 2.1rem;
+  color: #190d0d;
+  background: #bbcced;
 }
 
 
@@ -426,9 +430,16 @@ body {
   background: var(--blue);
   text-decoration: none;
   color: var(--white);
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
+.details .cardHeader .btn:hover{
+
+    font-size: 2.3rem;
+    color: #190d0d;
+    background: #bbcced;
+
+}
 .details_1 {
   position: relative;
   padding: 10px;
@@ -468,7 +479,13 @@ body {
   background: var(--blue);
   text-decoration: none;
   color: var(--white);
-  border-radius: 10px;
+  border-radius: 50px;
+}
+
+.details_1 .cardHeader .btn:hover{
+  background: #bbcced;
+  font-size: 2.1rem;
+  color:black
 }
 /* for the option button in html_css */
 .main .option {
